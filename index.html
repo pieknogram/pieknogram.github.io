@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekrety Madzi</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffe5e5;
+            color: #800000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-color: #ffe5e5;
+            }
+            100% {
+                background-color: #ffc0c0;
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px #b30000;
+            animation: textGlow 1.5s infinite alternate;
+        }
+
+        @keyframes textGlow {
+            0% {
+                text-shadow: 2px 2px 5px #b30000;
+            }
+            100% {
+                text-shadow: 2px 2px 15px #ff6666;
+            }
+        }
+
+        .container {
+            text-align: center;
+            border: 2px solid #800000;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            background-color: #fff5f5;
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        .image-container {
+            width: 100%;
+            max-width: 300px; /* Zmniejszono szerokość */
+            height: auto;
+            margin: 20px 0;
+            border: 2px dashed #800000;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #800000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #a00000;
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #800000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sekrety Madzi</h1>
+    <div class="container">
+        <div class="image-container">
+            <img src="image-18.png" alt="Zdjęcie Madzi">
+        </div>
+        <a href="#" class="button">Znajdziesz mnie tutaj</a>
+    </div>
+    <footer>&copy; 2025 Sekrety Madzi. Wszystkie prawa zastrzeżone.</footer>
+</body>
+</html>
